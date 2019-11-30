@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akan calculator</title>
-    <link rel="stylesheet" href="css/akan.css">
-
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/akan.css">
 </head>
 <body>
     <div class="container">
@@ -16,18 +16,32 @@
 Frequently in Ghana, children are given their first name as a 'day name'
  which corresponds to the day in the week they were born.</p>
     </div>
-<h2></h2>
-
-
-<form>
-    <label for=""> date of birth</label><br>
-<input type="date" data-date="" data-date-format="DD MMMM YYYY" value=""><br>
-<label for="">Gender</label><br>
-<input type="radio" name="gender" value="male"> Male<br>
-<input type="radio" name="gender" value="female"> Female<br>
-<button type="submit" form="form1" value="Submit">get akan name</button>
-<button type="submit" form="form1" value="Submit">cancel</button>
+    </div>
+<div class="text-centre" id="box">
+<form class="three">
+<p>Fill the following to get your akan name</p>
+    <label for=""> <strong>Day</strong></label><br>
+    <input type="number" name="day" placeholder="DD" value="" id="day"></br>
+    <label for=""> <strong>Month</strong></label><br>
+    <input type="number" name="month" placeholder="MM" value="" id="month"><br>
+    <label for=""> <strong>Century</strong></label><br>
+    <input type="number" name="century" placeholder="CC" value="" id="century"></br>
+    <label for=""> <strong>YEAR</strong></label><br>
+    <input type="number" name="year" placeholder="YY" value="" id="year"></br>
+    <label for=""><strong> Gender</strong></label><br>
+    <input type="radio" name="gender" value="male" id="male"> Male<br>
+    <input type="radio" name="gender" value="female" id="female"> Female<br>
+    <input id="click" type="button" value="getakanname" onclick="gh()">
 </form>
 
+
+</div>
+
+
+</div>
+
+
+<script src="js/scrips.js"></script>
+<footer>Made by: HABIBA HASSAN 2019</footer>
 </body>
 </html>

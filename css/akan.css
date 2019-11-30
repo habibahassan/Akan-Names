@@ -1,5 +1,23 @@
 body{
-    background: url(../images/1.jpg) no-repeat;
+    background-color: khaki;
     background-size: cover;
-
+}
+footer {
+    color: black;
+    float: right;
+}
+.three{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+#box {
+   width: 100%; 
+   border:15px snow ;
+   padding: 70px;
+   margin: 20px;
+   text-align: center;
+}
+#click {
+    background-color: red;
 }
