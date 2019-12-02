@@ -7,9 +7,9 @@
   open github and git clone my repository 
   send a pull request
  ## Technogies used
- Html
- CSS
- Javascript
+ * Html
+ * CSS
+ * Javascript
  ### contributing
  For any information pull request is welcome
 ## Author and acknowledgement
