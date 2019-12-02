@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Akan calculator</title>
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/akan.css">
-<script src="js/scrips.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/akan.css">
+    <script src="js/scrips.js"></script>
 
 </head>
+
 <body>
     <div class="container">
-    <div class="jumbotron">
-<h1>Akan names</h1>
-<p>Akan names are derived from Ghanian culture.
-Frequently in Ghana, children are given their first name as a 'day name'
- which corresponds to the day in the week they were born.</p>
+        <div class="jumbotron">
+            <h1>Akan names</h1>
+            <p>Akan names are derived from Ghanian culture.
+                Frequently in Ghana, children are given their first name as a 'day name'
+                which corresponds to the day in the week they were born.</p>
+        </div>
     </div>
+
+    <div class="text-centre" id="box">
+        <form class="three">
+            <p>Fill the following to get your akan name,on day fill in the date and for the year input the <i><u>last
+                        two digits</u> </i>of the year</p>
+            <label for="day">DATE</label>
+            <input type="number" name="day" id="day" placeholder="DD" required onmouseout="validaymyday()">
+            <label for="month">MONTH</label>
+            <input type="number" name="month" id="month" placeholder="MM" required onkeyup="validaymymonth()">
+            <label for="century">CENTURY</label>
+            <input type="number" name="century" id="century" placeholder="CC" required onkeyup="validaymycentury()">
+            <label for="year">YEAR</label>
+            <input type="number" name="year" id="year" placeholder="YY" value="" id="year" required
+                onkeyup="validaymyyear()">
+            <br>
+            <label for="gender">Gender</label>
+            <br>
+            <input type="radio" name="gender" value="male" id="maleArray"> male
+            <br>
+            <input type="radio" name="gender" value="female" id="femaleArray"> female
+            <br>
+            <input id="click" type="button" value="getakanname" onclick="getakanname()">
+            <output id="outAkan" type="text"></output>
+            <br>
+
+        </form>
+
     </div>
 
-<div class="text-centre" id="box">
-<form class="three">
-<p>Fill the following to get your akan name,on day fill in the date and for the year input the <i><u>last two digits</u> </i>of the year</p>
-    <label for="day">DATE</label>
-    <input type="number" name="day" id="day" placeholder="DD" required onmouseout="validaymyday()">
-    <label for="month">MONTH</label>
-    <input type="number" name="month" id="month" placeholder="MM" required onkeyup="validaymymonth()">
-    <label for="century">CENTURY</label>
-    <input type="number" name="century" id="century" placeholder="CC" required onkeyup="validaymycentury()">
-    <label for="year">YEAR</label>
-    <input type="number" name="year" id="year" placeholder="YY" value="" id="year" required onkeyup="validaymyyear()">
-    <br>
-    <label for="gender">Gender</label>
-    <br>
-    <input type="radio" name="gender" value="male" id="maleArray"> male
-    <br>
-    <input type="radio" name="gender" value="female" id="femaleArray"> female
-    <br>
-    <input id="click" type="button" value="getakanname" onclick="getakanname()" >
-    <output id="outAkan" type="text" ></output>
-    <br>
 
-</form>
-
-</div>
-
-
-</div>
-<footer>Made by: HABIBA HASSAN 2019</footer>
+    </div>
+    <footer>Made by: HABIBA HASSAN 2019</footer>
 </body>
+
 </html>
