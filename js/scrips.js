@@ -1,58 +1,60 @@
+function validaymyday() {
+  var day = document.getElementById("day").value;
+  if ((day <= 0) || (day > 31)) {
+    alert("Error!!! please enter correct day");
+  }
+}
+function validaymymonth() {
+  var month = document.getElementById("month").value;
+  
+  if ((month <= 0) || (month > 12)) {
+      alert("Error!!! please enter correct month");
+  }
+}
+function validaymycentury() {
+  var centuary = document.getElementById("century").value;
+  
+  if ((centuary <= 0) || (centuary > 99)){
 
-  function validatemydate() {
-    var date = document.getElementById("date").value;
+      alert("Error!!! please enter correct century");
+  }
+}
+function validaymyyear() {
+  var year = document.getElementById("year").value;
+  
+  if ((year <= 0) || (year > 99)){
+      alert("Error!!! please enter correct Year");
+  }
    
-    if ((date <= 0) || (date > 31)) {
-      
-    }
+}
+function getakanname() {
+  var day = document.getElementById('day').value;
+  var month = document.getElementById('month').value;
+  var year = document.getElementById("year").value;
+  var century = document.getElementById("century").value;
+  var gender;
+  var detail = document.getElementsByName('gender');
+
+  for (i = 0; i < detail.length; i++) {
+    if (detail[i].checked)
+      gender = detail[i].value;
   }
-  function validatemymonth() {
-    var month = document.getElementsById("month").value;
-    
-    if ((month <= 0) || (month > 12)) {
-      
-    }
-  }
-  function validatemycentuary() {
-    var centuary = document.getElementsById("Centuary").value;
-    
-    if ((centuary <= 0) || (centuary > 99));
-  }
-  function validatemyyear() {
-    var year = document.getElementsById("year").value;
-    
-    if ((year <= 0) || (year > 99));
-     
-  }
-  function getakanname() {
-    var date = document.getElementsById('date').value;
-    var month = document.getElementsById('month').value;
-    var year = document.getElementsById("year").value;
-    var century = document.getElementsById("Centuary").value;
-    var gender;
-    var detail = document.getElementsByName('gender');
+ 
+  var Weekday= (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + day) % 7;
+
   
-    for (i = 0; i < detail.length; i++) {
-      if (detail[i].checked)
-        gender = detail[i].value;
-    }
-   
-    var Weekday= (((century / 4) - 2 * century - 1) + ((5 * year / 4)) + ((26 * (month + 1) / 10)) + date) % 7;
-  
+  var femaleArray = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
+  var maleArray = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+  var daysArray = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  if (gender == "male") {
+    var xy = "Your Akan Name is: " + maleArray[Math.floor(Weekday)] + "  and Day of the week is: " + daysArray[Math.floor(Weekday)];
+    document.getElementById("outAkan").innerHTML = xy;
     
-    var female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
-    var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    if (gender == "male") {
-      var xy = " " + male[Math.floor(Weekday)] + "   :: " + days[Math.floor(Weekday)];
-      document.getElementsByName("name").innerHTML = xy;
-      
-    }
-    else {
-      var xy = " " + female[Math.floor(Weekday)] + "    :: " + days[Math.floor(Weekday)];
-      document.getElementsByName("name").innerHTML = xy;
-      
-    }
   }
-  
-  
+  else {
+    var xy = "Your Akan Name is: " + femaleArray[Math.floor(Weekday)] + "  and Day of the week is: " + daysArray[Math.floor(Weekday)];
+    document.getElementById("outAkan").innerHTML = xy;
+    
+  }
+  console.log(xy);
+}
