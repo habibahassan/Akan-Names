@@ -56,5 +56,5 @@ function getakanname() {
     document.getElementById("outAkan").innerHTML = xy;
     
   }
-  console.log(xy);
+ 
 }
