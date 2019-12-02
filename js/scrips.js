@@ -1,38 +1,38 @@
 
   function validatemydate() {
-    var date = document.getElementsByName("date").value;
+    var date = document.getElementById("date").value;
    
     if ((date <= 0) || (date > 31)) {
       
     }
   }
   function validatemymonth() {
-    var month = document.getElementsByName("month").value;
+    var month = document.getElementsById("month").value;
     
     if ((month <= 0) || (month > 12)) {
       
     }
   }
   function validatemycentuary() {
-    var centuary = document.getElementsByName("Centuary").value;
+    var centuary = document.getElementsById("Centuary").value;
     
     if ((centuary <= 0) || (centuary > 99));
   }
   function validatemyyear() {
-    var year = document.getElementsByName("year").value;
+    var year = document.getElementsById("year").value;
     
     if ((year <= 0) || (year > 99));
      
   }
   function getakanname() {
-    var date = document.getElementsByName('date').value;
-    var month = document.getElementsByName('month').value;
-    var year = document.getElementsByName("year").value;
-    var century = document.getElementsByName("Centuary").value;
+    var date = document.getElementsById('date').value;
+    var month = document.getElementsById('month').value;
+    var year = document.getElementsById("year").value;
+    var century = document.getElementsById("Centuary").value;
     var gender;
     var detail = document.getElementsByName('gender');
   
-    for (i = 0; i < ele.length; i++) {
+    for (i = 0; i < detail.length; i++) {
       if (detail[i].checked)
         gender = detail[i].value;
     }
@@ -44,13 +44,13 @@
     var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
     var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     if (gender == "male") {
-      var d = " " + male[Math.floor(Weekday)] + "   :: " + days[Math.floor(Weekday)];
-      document.getElementsByName("name").innerHTML = d;
+      var xy = " " + male[Math.floor(Weekday)] + "   :: " + days[Math.floor(Weekday)];
+      document.getElementsByName("name").innerHTML = xy;
       
     }
     else {
-      var d = " " + female[Math.floor(Weekday)] + "    :: " + days[Math.floor(Weekday)];
-      document.getElementsByName("name").innerHTML = d;
+      var xy = " " + female[Math.floor(Weekday)] + "    :: " + days[Math.floor(Weekday)];
+      document.getElementsByName("name").innerHTML = xy;
       
     }
   }
