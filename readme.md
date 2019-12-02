@@ -7,11 +7,11 @@
   open github and git clone my repository 
   send a pull request
  ## Technogies used
-    Html
-    CSS
-    Javascript
+ Html
+ CSS
+ Javascript
  ### contributing
-  for any information pull request is welcome
+ For any information pull request is welcome
 ## Author and acknowledgement
  By Habiba Hassan
 ### Link on github
