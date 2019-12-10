@@ -12,6 +12,8 @@
  * Javascript
  ### contributing
  For any information pull request is welcome
+ ### Code Beat
+ [![codebeat badge](https://codebeat.co/badges/d31a79fd-231c-474e-b012-71d545bc0842)](https://codebeat.co/projects/github-com-habibahassan-akan-names-master)
 ## Author and acknowledgement
  By Habiba Hassan
 ### Link on github
