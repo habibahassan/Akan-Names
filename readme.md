@@ -19,7 +19,6 @@
 ### Link on github
  https://habibahassan.github.io/Akan-Names/
 ## Contact Information
-  * 0725142516
   *  Email:halimaadan92@gmail.com
 #  Licence
  licensed under the [MIT License](license)
